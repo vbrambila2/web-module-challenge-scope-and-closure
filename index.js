@@ -28,11 +28,14 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
+    counter1 uses closure, there is a function inside of it that reaches out to an outer function. counter2 reaches out to a variable. 
   
   2. Which of the two uses a closure? How can you tell?
+    counter1, because it has the inner function.
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+      counter1 would be preferable in a situation where you would only want that particular function to have access to the counter variable. If you want the counter variable to be accessed by other functions as well, then counter2 would be the better choice.
 */
 
 // counter1 code
